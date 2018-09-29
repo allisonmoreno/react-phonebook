@@ -34,16 +34,15 @@ function generate(element) {
 class UsersList extends React.Component {
   state = {
     dense: false,
-    secondary: false,
   };
 
   render() {
     const { classes } = this.props;
-    const { dense, secondary } = this.state;
+    const { dense } = this.state;
 
     return (
       <div className={classes.root}> 
-          <Grid item xs={12} md={12} md={12}>
+          <Grid item xs={12}>
             <div className={classes.demo}>
               <List dense={dense}>
                 {generate(
